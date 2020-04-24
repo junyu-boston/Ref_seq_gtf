@@ -6,4 +6,7 @@ I plan to run salmon on my DNA-seq data to get the transcripts abundance. I want
 I found the information here: 
 https://bioinformatics.stackexchange.com/questions/2548/hg38-gtf-file-with-refseq-annotations
 
-I will try it.
+Instead of re-invent wheel, I donwload the refseq gene here:
+https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/
+
+
