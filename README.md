@@ -21,3 +21,12 @@ Although the majority of UCSC Known Genes (KG) are identical to RefSeq genes, th
 Not every RefSeq is a KG. Some RefSeqs were filtered out because they did not pass our gene-check processing step (e.g. RefSeqs with no start or stop codons, or bad reading frames are filtered out).
 If there is a UniProt protein which maps well to a GenBank mRNA, and it passes the gene-check filter and there is no equal or better corresponding RefSeq, the mRNA/UniProt pair will be added to the KG data set.
 UCSC KG is updated once in a few months. Our RefSeq track is updated nightly. So the refGene table may contains some latest RefSeq updates that came after the last KG build.
+
+
+It turns out the version from UCSC is old. I decided to download Refseq annotation from NCBI directly.  human Release 109
+
+## Obstacle
+The seqname from NCBI is the accession number. I need to convert this to numbers 1, 2, 3 ... X, Y, MT etc etc.
+
+## I figured this out, will record here:
+
