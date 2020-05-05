@@ -51,3 +51,7 @@ human_refseq_match <- read_delim("human_refseq_match.txt",
 #### 
 cmd =paste0("sed -e 's/", human_refseq_match$`RefSeq-Accn`, '/', human_refseq_match$`Sequence-Name`, "/g' | \\")
 writeLines(cmd, "D:/dicerna/annotations/human/refseq/ncbi2ensembl.sh")
+
+## sort, bgzip, and tabix 
+https://github.com/billzt/gff3sort
+
