@@ -28,5 +28,13 @@ It turns out the version from UCSC is old. I decided to download Refseq annotati
 ## Obstacle
 The seqname from NCBI is the accession number. I need to convert this to numbers 1, 2, 3 ... X, Y, MT etc etc.
 
-## I figured this out, will record here:
+## Download human refseq gff and gtf files:
+https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml
+
+api: https://github.com/NCBI-Hackathons/EDirectCookbook
+
+NCBI ftp site
+https://ftp.ncbi.nlm.nih.gov/refseq/
+
+
 
