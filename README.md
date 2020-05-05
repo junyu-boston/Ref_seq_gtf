@@ -36,5 +36,18 @@ api: https://github.com/NCBI-Hackathons/EDirectCookbook
 NCBI ftp site
 https://ftp.ncbi.nlm.nih.gov/refseq/
 
+For latest human:
+https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/
+
+release 109 
+https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/annotation_releases/109.20200228/GCF_000001405.39_GRCh38.p13/
+
+library(readr)
+human_refseq_match <- read_delim("human_refseq_match.txt", 
+                                 "\t", escape_double = FALSE, trim_ws = TRUE)
 
 
+
+#### 
+cmd =paste0("sed -e 's/", human_refseq_match$`RefSeq-Accn`, '/', human_refseq_match$`Sequence-Name`, "/g' | \\")
+writeLines(cmd, "D:/dicerna/annotations/human/refseq/ncbi2ensembl.sh")
